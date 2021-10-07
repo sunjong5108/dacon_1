@@ -3,8 +3,8 @@ DACON 빛번짐 제거 모델 경진대회
 
 경진대회가 끝날 시점에 가장 높은 PSNR값을 가졌을 때, 사용한 layer, loss function, optimizer
 
-- 참고 자료 1: [https://github.com/JunHeon-Ch/Image_Denoising_UNet](https://github.com/JunHeon-Ch/Image_Denoising_UNet)
-- 참고 자료 2: [https://github.com/sguarnaccio/MSSSIM-ResidualAutoencoder](https://github.com/sguarnaccio/MSSSIM-ResidualAutoencoder)
+- 참고 자료 1: https://github.com/JunHeon-Ch/Image_Denoising_UNet
+- 참고 자료 2: https://github.com/sguarnaccio/MSSSIM-ResidualAutoencoder
 
 Dacon 제공 baseline code에서 바꾼 layer 
 
@@ -24,13 +24,7 @@ Dacon 제공 baseline code에서 바꾼 loss function
 - 경진대회 당시 제일 잘 나온 PSNR = 25.5994491802
     
     약 0.3점 증가!
-    
 
-예측 이미지, PSNR값
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/99b5676d-c8d1-4488-8bf5-5b1cb2681090/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/99b5676d-c8d1-4488-8bf5-5b1cb2681090/Untitled.png)
 
 - 전체적으로 어두운 환경의 이미지에서 빛 번짐을 더 잘 잡았고, 밝은 환경의 이미지에서는 그렇지 않았다.
 생각해보면 전체적으로 이미지가 밝은 경우 모델이 빛이 번진 부분과 주변 배경을 혼동하는 것 같다.
